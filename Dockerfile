@@ -1,5 +1,4 @@
-FROM demo/maven:3.3-jdk-8
-MAINTAINER Author <autor@email.com>
+FROM maven:3.3-jdk-8
 RUN apt-get update && \
     apt-get install -yq --no-install-recommends wget pwgen ca-certificates && \
     apt-get clean && \
